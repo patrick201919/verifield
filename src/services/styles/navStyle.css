@@ -1,0 +1,94 @@
+nav {
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 15px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+nav li {
+  list-style: none;
+  font-weight: 600;
+  padding-right: 80px;
+  font-family: "Scto-Grotesk-A";
+}
+
+nav a {
+  color: #000000;
+  text-decoration: none;
+}
+
+nav a:hover {
+  opacity: 0.5;
+}
+.linkHome {
+  padding-right: 15vw;
+}
+
+.active {
+  color: white;
+}
+
+.inactive {
+  color: #000000;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/***************************************/
+/********** MEDIA SCREEN ********/
+
+@media screen and (max-width: 1054px) {
+  .nav-container {
+    position: relative;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .nav-container.home-active {
+    background-color: burlywood;
+    color: white;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin: 0 auto;
+    padding: 17px 0;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .menu-toggle.home-active {
+    color: white;
+  }
+
+  .menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    list-style-type: none;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .menu-list li {
+    margin-bottom: 25px;
+    padding-right: 0;
+  }
+
+  .menu-list a {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+}

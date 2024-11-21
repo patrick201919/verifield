@@ -1,0 +1,73 @@
+/***************************************/
+/********** MEDIA SCREEN ********/
+/* .title-mask-container {
+  position: relative;
+  overflow: hidden;
+  width: fit-content;
+  display: inline-block;
+}
+
+.title-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: 2; 
+}
+
+.product-architecture-title {
+  position: relative;
+  z-index: 1; 
+  opacity: 0; 
+}
+
+.product-architecture-categories-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  width: 100%;
+  position: fixed;
+}
+
+.product-architecture-categories-title {
+  font-size: 24px;
+  font-weight: 400;
+  cursor: pointer;
+} */
+
+.title-mask-container {
+  position: relative;
+  overflow: hidden;
+  width: fit-content;
+  height: fit-content;
+  display: inline-block;
+  background-color: red;
+}
+
+.title-mask {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  /* position: relative; */
+}
+
+.product-architecture-categories-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  width: 100%;
+  position: fixed;
+}
+
+.product-architecture-categories-title {
+  font-size: 24px;
+  font-weight: 400;
+  cursor: pointer;
+}

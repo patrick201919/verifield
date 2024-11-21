@@ -1,0 +1,167 @@
+.container-nav-product {
+  position: relative;
+  height: 54px;
+}
+.nav-product {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 100;
+}
+
+.container-product-architecture-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-left: 30px;
+  position: relative;
+  z-index: 5;
+}
+.fixed-title-animation {
+  height: 150px;
+  width: 45%;
+  position: absolute;
+  top: 60px;
+  left: 5;
+  z-index: 13;
+  /* background-color: white; */
+  background: linear-gradient(to top, #fff 40%, rgba(255, 255, 255, 0) 100%);
+}
+.architecture-page .fixed-title-animation {
+  width: 60%;
+}
+
+.product-architecture-categories-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  width: 100%;
+  position: fixed;
+}
+
+.product-architecture-title {
+  margin: 10px 0;
+}
+
+.product-architecture-categories-title {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 49px;
+  cursor: pointer;
+}
+
+/* Style de la liste des catégories */
+
+.categories-list-btn {
+  width: 100%;
+  position: fixed;
+  padding-top: 80px;
+}
+
+.categories-list-btn ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin-right: 70px;
+  line-height: 1;
+}
+
+.categories-list-btn li {
+  font-size: 57.6px;
+  flex-wrap: wrap;
+}
+
+.categories-list-btn li a {
+  margin: 20px 20px 0 0;
+  padding: 0;
+  cursor: pointer;
+  font-family: "GT-Super-Text-Book";
+  font-style: italic;
+}
+
+.link-close-button-product-architecture {
+  cursor: pointer;
+}
+.close-button-product-architecture {
+  cursor: pointer;
+  all: unset;
+  font-size: 16px;
+  padding-left: 0;
+}
+
+/* .categories-list-btn :hover li a {
+  opacity: 0.5;
+}
+
+.categories-list-btn li a:hover {
+  opacity: 1;
+} */
+
+/***************************************/
+/********** MEDIA SCREEN ********/
+
+@media screen and (max-width: 1260px) and (min-width: 791px) {
+  /*-------TITLE PRODUCT && ARCHITECTURE ------*/
+  .product-architecture-categories-header .product-architecture-title {
+    font-size: calc(60px + (80 - 60) * ((100vw - 791px) / (1260 - 791)));
+  }
+
+  .categories-list-btn-container .categories-list-btn li {
+    font-size: calc(28px + (57.6 - 28) * ((100vw - 791px) / (1260 - 791)));
+  }
+
+  .categories-list-btn-container .categories-list-btn li {
+    font-size: calc(
+      35.775px + (57.6 - 35.775) * ((100vw - 791px) / (1260 - 791))
+    );
+  }
+
+  .categories-list-btn-container .categories-list-btn li a {
+    width: 100%;
+  }
+}
+
+/********   max-width: 790px *******/
+@media screen and (max-width: 790px) {
+  /*-------TITLE PRODUCT && ARCHITECTURE ------*/
+
+  .container-product-architecture-title
+    .product-architecture-categories-header {
+    position: relative;
+  }
+
+  .product-architecture-categories-header .product-architecture-title {
+    font-size: 28px;
+  }
+
+  .categories-list-btn-container .categories-list-btn {
+    position: relative;
+  }
+  .categories-list-btn-container .categories-list-btn ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+  }
+  .categories-list-btn {
+    margin-top: -20px;
+    padding-top: 0;
+  }
+  .link-map-categories {
+    margin-bottom: -5px;
+  }
+
+  .categories-list-btn li a {
+    font-size: 28px;
+    width: 100%;
+    text-align: left;
+  }
+  .link-close-button-product-architecture {
+    margin-top: -15px;
+  }
+}

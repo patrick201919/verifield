@@ -1,0 +1,66 @@
+/***************************************/
+/********** GENERALITIES ********/
+@font-face {
+  font-family: "Scto-Grotesk-A";
+  src: url("/public/assets/fonts/Scto-Grotesk-A/Scto-Grotesk-A-Medium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT-Super-Text-Bold-Italic";
+  src: url("/public/assets/fonts/GT-Super/GT-Super-Text-Bold-Italic-Trial.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT-Super-Text-Regular";
+  src: url("/public/assets/fonts/GT-Super/GT-Super-Text-Regular-Trial.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT-Super-Text-Book";
+  src: url("/public/assets/fonts/GT-Super/GT-Super-Text-Book-Italic-Trial.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --colors-body: #000000;
+}
+
+body {
+  margin: 0;
+  font-family: "GT-Super-Text-Regular", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--colors-body);
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--colors-body);
+}
+h1 {
+  font-size: 80px;
+  font-weight: 600;
+  font-family: "Scto-Grotesk-A";
+}
+
+/***************************************/
+/********** MEDIA SCREEN ********/
+
+
+
+

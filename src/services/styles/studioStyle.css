@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  overflow: hidden; /* Masquer le dépassement */
+}
+
+.mask-container {
+  position: relative;
+  width: 300px;
+  height: 100px;
+  overflow: hidden;
+  background-color: lightblue;
+}
+
+.overflow-container {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+
+.hidden-content {
+  padding: 20px;
+  font-size: 1rem;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.masking-container {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  width: 50%; /* Ajustez la largeur selon vos besoins */
+}
+
+.masking-div {
+  width: 200px; /* Largeur de la div de masquage */
+  height: 200px;
+  overflow: hidden; /* Masque ce qui dépasse de cette div */
+  z-index: 2; /* Place cette div au-dessus de la content-div */
+}
+
+.content-div {
+  width: 300px; /* Largeur de la div à masquer */
+  height: 200px;
+  position: relative;
+  z-index: 1;
+  margin-left: -150px; /* Décale la div pour qu'elle dépasse de la div masquante */
+}
+
+.other-elements {
+  width: 40%; /* Largeur de la section d'autres éléments */
+  padding: 10px;
+}

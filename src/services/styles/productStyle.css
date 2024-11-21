@@ -1,0 +1,30 @@
+.product-page {
+  position: relative;
+}
+
+/* .fixed-title-animation {
+  height: 150px;
+  width: 70%;
+  position: absolute;
+  top: 60px;
+  left: 5;
+  z-index: 13;
+  background-color: white;
+}
+
+.title-product {
+  font-size: 80px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  transform-origin: top;
+  text-transform: uppercase;
+  font-family: "Scto Grotesk A";
+}
+.title-categories {
+  left: 430px;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  top: 120px;
+} */

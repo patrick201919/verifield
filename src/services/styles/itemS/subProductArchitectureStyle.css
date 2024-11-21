@@ -1,0 +1,103 @@
+.images-container {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-top: 13rem;
+}
+.images-animation {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+}
+
+.image-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  transition: opacity 2.2s ease-in-out;
+  opacity: 0;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 2px;
+}
+.image-container img:hover {
+  opacity: 0.5;
+}
+
+.container-model-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 35px;
+}
+.image-model {
+  font-size: 18;
+  padding-right: 2px;
+  font-weight: bold;
+}
+.image-brand {
+  font-size: 16;
+  padding-left: 2px;
+}
+
+.left {
+  align-self: flex-start;
+  padding-left: 20px;
+}
+
+.center {
+  align-self: center;
+}
+
+.right {
+  align-self: flex-end;
+  padding-right: 20px;
+}
+
+/* .container-title-product {
+  margin-bottom: 200px;
+} */
+
+/***************************************/
+/********** MEDIA SCREEN ********/
+
+/********   min-width: 1260px *******/
+@media screen and (min-width: 1260px) {
+  .image-container {
+    width: 510px;
+  }
+}
+
+@media screen and (max-width: 1260px) and (min-width: 791px) {
+  /*-------IMAGES PRODUCT && ARCHITECTURE ------*/
+  .image-container {
+    width: calc(315px + (510 - 315) * ((100vw - 791px) / (1260 - 791)));
+  }
+}
+
+/********   max-width: 790px *******/
+@media screen and (max-width: 790px) {
+  /**** IMAGES PRODUCT && ARCHITECTURE *******/
+  .images-container {
+    margin-top: 55px;
+  }
+  .image-container {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .left {
+    align-self: center;
+  }
+  .right {
+    align-self: center;
+  }
+}
