@@ -9,13 +9,13 @@ const Footer: React.FC = () => {
         <div className="footer-text">
           <p className="bottom-p-first">© 2024 Patricia Urquiola</p>
 
-          <p>Patricia Urquiola S.p.A. (architecture)</p>
-          <p>via Bartolomeo Eustachi, 45 - 20129 Milan Italy</p>
-          <p className="bottom-p">VAT No. 04378340964</p>
+          <p>John Doe Architecture Ltd. (architecture)</p>
+<p>via Roma, 12 - 00100 Rome Italy</p>
+<p className="bottom-p">VAT No. 12345678901</p>
 
-          <p>Patricia Urquiola Design S.r.l. (product design)</p>
-          <p>via Bartolomeo Eustachi, 45 - 20129 Milan Italy</p>
-          <p className="bottom-p">VAT No. 06506690962</p>
+<p>Jane Smith Design Co. (product design)</p>
+<p>via Firenze, 89 - 50100 Florence Italy</p>
+<p className="bottom-p">VAT No. 98765432101</p>
 
           <p className="font-bold">
             <a href="/privacy-policy">Privacy policy</a>
