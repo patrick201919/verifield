@@ -7,15 +7,15 @@ const Footer: React.FC = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-text">
-          <p className="bottom-p-first">© 2024 Patricia Urquiola</p>
+          <p className="bottom-p-first">© 2024 Verifield Creations</p>
 
           <p>John Doe Architecture Ltd. (architecture)</p>
-<p>via Roma, 12 - 00100 Rome Italy</p>
-<p className="bottom-p">VAT No. 12345678901</p>
+          <p>via Roma, 12 - 00100 Rome Italy</p>
+          <p className="bottom-p">VAT No. 12345678901</p>
 
-<p>Jane Smith Design Co. (product design)</p>
-<p>via Firenze, 89 - 50100 Florence Italy</p>
-<p className="bottom-p">VAT No. 98765432101</p>
+          <p>Jane Smith Design Co. (product design)</p>
+          <p>via Firenze, 89 - 50100 Florence Italy</p>
+          <p className="bottom-p">VAT No. 98765432101</p>
 
           <p className="font-bold">
             <a href="/privacy-policy">Privacy policy</a>
